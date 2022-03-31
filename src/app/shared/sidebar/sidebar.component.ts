@@ -13,4 +13,8 @@ export class SidebarComponent {
 
   constructor( private gifsService: GifsService ){} //Ya tengo todas sus propiedades y todos sus métodos  
 
+  buscar( termino:string ){
+    this.gifsService.buscarGifs( termino );
+  }
+
 }
